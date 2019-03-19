@@ -1,0 +1,28 @@
+{
+  "name": "jwt",
+  "version": "1.0.0",
+  "description": "jsonwebtoken",
+  "main": "dist/index",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dqhcjlu06/jwt.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dqhcjlu06/jwt/issues"
+  },
+  "homepage": "https://github.com/dqhcjlu06/jwt#readme",
+  "dependencies": {
+    "bcrypt": "^3.0.4",
+    "jsonwebtoken": "^8.5.1"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^3.0.0",
+    "@types/jsonwebtoken": "^8.3.2"
+  }
+}
