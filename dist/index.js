@@ -38,7 +38,7 @@ exports.createToken = (data, privateKey, expiresIn = '1 days', algorithm = 'RS25
  * @param publicKey
  * @param algorithms
  */
-exports.verifyToken = (token, publicKey, algorithms = ['algorithms']) => {
+exports.verifyToken = (token, publicKey, algorithms = ['RS256']) => {
     return jsonwebtoken_1.verify(token, publicKey, { algorithms });
 };
 exports.isBcryptHash = (str) => {
