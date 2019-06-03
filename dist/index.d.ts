@@ -12,7 +12,7 @@ export declare const createToken: (data: string | object | Buffer, privateKey: s
  * @param publicKey
  * @param algorithms
  */
-export declare const verifyToken: (token: string, publicKey: string, algorithms?: string[]) => string | object;
+export declare const verifyToken: (token: string, publicKey: string | Buffer, algorithms?: string[]) => string | object;
 export declare const isBcryptHash: (str: string) => boolean;
 export declare const generateHash: (password?: string) => Promise<string>;
 //# sourceMappingURL=index.d.ts.map

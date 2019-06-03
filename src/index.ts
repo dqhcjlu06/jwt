@@ -26,7 +26,7 @@ export const createToken = (data: string | object | Buffer, privateKey: string |
  * @param publicKey 
  * @param algorithms 
  */
-export const verifyToken = (token: string, publicKey: string, algorithms: string[] = ['RS256']) => {
+export const verifyToken = (token: string, publicKey: string | Buffer, algorithms: string[] = ['RS256']) => {
   return verify(
     token,
     publicKey,
