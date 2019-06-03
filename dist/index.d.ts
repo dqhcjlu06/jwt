@@ -5,7 +5,7 @@
  * @param password
  */
 export declare const verifyPassword: (hash: string, password: string) => boolean;
-export declare const createToken: (data: string | object | Buffer, privateKey: string, expiresIn?: string, algorithm?: string) => string;
+export declare const createToken: (data: string | object | Buffer, privateKey: string | Buffer, expiresIn?: string, algorithm?: string) => string;
 /**
  * 验证token
  * @param token

@@ -12,7 +12,7 @@ export const verifyPassword = (hash: string, password: string) => {
   return bcrypt.compareSync(password, hash)
 }
 
-export const createToken = (data: string | object | Buffer, privateKey: string, expiresIn: string = '1 days', algorithm: string = 'RS256') => {
+export const createToken = (data: string | object | Buffer, privateKey: string | Buffer, expiresIn: string = '1 days', algorithm: string = 'RS256') => {
   return jwt.sign(
     data,
     privateKey,
